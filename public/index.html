@@ -6,38 +6,37 @@
     <title>Calculadora Científica</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-200 min-h-screen flex items-center justify-center">
     <div class="container mx-auto p-4">
         <div class="max-w-lg mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
-            <div class="p-4">
-                <input id="display" type="text" class="w-full text-right p-2 border rounded" readonly>
+            <div class="p-4 bg-gray-100">
+                <input id="display" type="text" class="w-full text-right p-4 border rounded bg-white text-lg" readonly>
             </div>
-            <div class="p-4 grid grid-cols-4 gap-2">
+            <div class="p-4 grid grid-cols-4 gap-3">
                 <!-- Botões da calculadora -->
-                <button class="bg-gray-200 p-4 rounded">7</button>
-                <button class="bg-gray-200 p-4 rounded">8</button>
-                <button class="bg-gray-200 p-4 rounded">9</button>
-                <button class="bg-blue-500 text-white p-4 rounded">/</button>
-                <button class="bg-gray-200 p-4 rounded">4</button>
-                <button class="bg-gray-200 p-4 rounded">5</button>
-                <button class="bg-gray-200 p-4 rounded">6</button>
-                <button class="bg-blue-500 text-white p-4 rounded">*</button>
-                <button class="bg-gray-200 p-4 rounded">1</button>
-                <button class="bg-gray-200 p-4 rounded">2</button>
-                <button class="bg-gray-200 p-4 rounded">3</button>
-                <button class="bg-blue-500 text-white p-4 rounded">-</button>
-                <button class="bg-gray-200 p-4 rounded">0</button>
-                <button class="bg-gray-200 p-4 rounded">.</button>
-                <button class="bg-blue-500 text-white p-4 rounded">C</button>
-                <button class="bg-blue-500 text-white p-4 rounded">+</button>
-                <button class="bg-gray-200 p-4 rounded col-span-2">sin</button>
-                <button class="bg-gray-200 p-4 rounded">cos</button>
-                <button class="bg-gray-200 p-4 rounded">tan</button>
-                <button class="bg-green-500 text-white p-4 rounded col-span-4">=</button>
+                <button class="bg-gray-300 p-4 rounded text-lg">7</button>
+                <button class="bg-gray-300 p-4 rounded text-lg">8</button>
+                <button class="bg-gray-300 p-4 rounded text-lg">9</button>
+                <button class="bg-blue-500 text-white p-4 rounded text-lg">/</button>
+                <button class="bg-gray-300 p-4 rounded text-lg">4</button>
+                <button class="bg-gray-300 p-4 rounded text-lg">5</button>
+                <button class="bg-gray-300 p-4 rounded text-lg">6</button>
+                <button class="bg-blue-500 text-white p-4 rounded text-lg">*</button>
+                <button class="bg-gray-300 p-4 rounded text-lg">1</button>
+                <button class="bg-gray-300 p-4 rounded text-lg">2</button>
+                <button class="bg-gray-300 p-4 rounded text-lg">3</button>
+                <button class="bg-blue-500 text-white p-4 rounded text-lg">-</button>
+                <button class="bg-gray-300 p-4 rounded text-lg">0</button>
+                <button class="bg-gray-300 p-4 rounded text-lg">.</button>
+                <button class="bg-red-500 text-white p-4 rounded text-lg">C</button>
+                <button class="bg-blue-500 text-white p-4 rounded text-lg">+</button>
+                <button class="bg-gray-300 p-4 rounded text-lg col-span-2">sin</button>
+                <button class="bg-gray-300 p-4 rounded text-lg">cos</button>
+                <button class="bg-gray-300 p-4 rounded text-lg">tan</button>
+                <button class="bg-green-500 text-white p-4 rounded text-lg col-span-4">=</button>
             </div>
         </div>
     </div>
     <script src="app.js"></script>
 </body>
 </html>
-

@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Científica</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-4">
+        <div class="max-w-lg mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+            <div class="p-4">
+                <input id="display" type="text" class="w-full text-right p-2 border rounded" readonly>
+            </div>
+            <div class="p-4 grid grid-cols-4 gap-2">
+                <!-- Botões da calculadora -->
+                <button class="bg-gray-200 p-4 rounded">7</button>
+                <button class="bg-gray-200 p-4 rounded">8</button>
+                <button class="bg-gray-200 p-4 rounded">9</button>
+                <button class="bg-blue-500 text-white p-4 rounded">/</button>
+                <button class="bg-gray-200 p-4 rounded">4</button>
+                <button class="bg-gray-200 p-4 rounded">5</button>
+                <button class="bg-gray-200 p-4 rounded">6</button>
+                <button class="bg-blue-500 text-white p-4 rounded">*</button>
+                <button class="bg-gray-200 p-4 rounded">1</button>
+                <button class="bg-gray-200 p-4 rounded">2</button>
+                <button class="bg-gray-200 p-4 rounded">3</button>
+                <button class="bg-blue-500 text-white p-4 rounded">-</button>
+                <button class="bg-gray-200 p-4 rounded">0</button>
+                <button class="bg-gray-200 p-4 rounded">.</button>
+                <button class="bg-blue-500 text-white p-4 rounded">C</button>
+                <button class="bg-blue-500 text-white p-4 rounded">+</button>
+                <button class="bg-gray-200 p-4 rounded col-span-2">sin</button>
+                <button class="bg-gray-200 p-4 rounded">cos</button>
+                <button class="bg-gray-200 p-4 rounded">tan</button>
+                <button class="bg-green-500 text-white p-4 rounded col-span-4">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
 

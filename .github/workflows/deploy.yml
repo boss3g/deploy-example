@@ -1,4 +1,4 @@
-name: Deploy to GitHub
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -11,23 +11,15 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3 # Versão exata da ação (projeto)
-
-    - name: Install dependencies
-      run: |
-        npm ci # Instala dependências com base no package-lock.json
-        npm run lint # Verifica a segurança e qualidade do código 
-
-    - name: Build project
-      run: npm run build # Adicione uma etapa de build para preparar os arquivos para deploy 
+      uses: actions/checkout@v3
 
     - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3.8.0 # Versão exata da ação
+      uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.ACTIONS_DEPLOY_TOKEN }}
         publish_branch: gh-pages
         publish_dir: ./public
 
     - name: Notify deployment success
-      run: echo "New config Deployment to GitHub Pages was successful!"
+      run: echo "Deployment to GitHub Pages was successful!"
       if: success()

@@ -1,25 +1,25 @@
-## Descrição
+## Description
 
-Esta é uma aplicação simples de uma calculadora científica desenvolvida utilizando HTML, TailwindCSS e JavaScript. O objetivo deste projeto é demonstrar como realizar o deploy contínuo utilizando GitHub Actions para GitHub Pages.
+This is a simple scientific calculator application built using HTML, TailwindCSS, and JavaScript. The goal of this project is to demonstrate how to perform continuous deployment using GitHub Actions to GitHub Pages.
 
-## Funcionalidades
+## Features
 
-- **Operações matemáticas básicas:** adição, subtração, multiplicação e divisão.
-- **Funções científicas avançadas:** seno, cosseno, tangente, logaritmo, exponencial e mais.
-- **Interface responsiva e amigável:** estilizada com TailwindCSS.
-- **Deploy contínuo e automatizado:** utilizando GitHub Actions.
+- **Basic mathematical operations:** addition, subtraction, multiplication, and division.
+- **Advanced scientific functions:** sine, cosine, tangent, logarithm, exponential, and more.
+- **Responsive and user-friendly interface:** styled with TailwindCSS.
+- **Continuous and automated deployment:** using GitHub Actions.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
-- **HTML5:** Estrutura do aplicativo.
-- **TailwindCSS:** Estilização rápida e responsiva.
-- **JavaScript:** Lógica de funcionamento da calculadora.
-- **GitHub Actions:** CI/CD para deploy automatizado no GitHub Pages.
+- **HTML5:** Structure of the application.
+- **TailwindCSS:** Fast and responsive styling.
+- **JavaScript:** Calculator functionality logic.
+- **GitHub Actions:** CI/CD for automated deployment to GitHub Pages.
 
-## Estrutura do Projeto
+## Project Structure
 
 ```
-calculadora-cientifica/
+scientific-calculator/
 ├── public/
 │   ├── index.html
 │   ├── app.js
@@ -30,13 +30,13 @@ calculadora-cientifica/
 └── LICENSE
 ```
 
-## Deploy Contínuo com GitHub Actions
+## Continuous Deployment with GitHub Actions
 
-Este projeto utiliza GitHub Actions para realizar deploy contínuo para GitHub Pages. Sempre que há um push para a branch `main`, o workflow é acionado, realizando o deploy dos arquivos da pasta `public` para a branch `gh-pages`.
+This project uses GitHub Actions for continuous deployment to GitHub Pages. Whenever a push is made to the `main` branch, the workflow is triggered, deploying the files from the `public` folder to the `gh-pages` branch.
 
-### Configuração do Workflow
+### Workflow Configuration
 
-O arquivo de configuração do GitHub Actions (`.github/workflows/deploy.yml`) está configurado da seguinte maneira:
+The GitHub Actions configuration file (`.github/workflows/deploy.yml`) is set up as follows:
 
 ```yaml
 name: Deploy to GitHub Pages

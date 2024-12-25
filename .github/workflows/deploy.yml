@@ -10,16 +10,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.ACTIONS_DEPLOY_TOKEN }}
-        publish_branch: gh-pages
-        publish_dir: ./public
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.ACTIONS_DEPLOY_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./public
 
-    - name: Notify deployment success
-      run: echo "Deployment to GitHub Pages was successful!"
-      if: success()
+      - name: Notify deployment success
+        if: success()
+        run: echo "🚀 Deployment to GitHub Pages was successful!"
